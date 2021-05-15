@@ -1,5 +1,15 @@
 <h1>
-    <!-- Prende tutto quello che è presente come testo nel componente utilizzatore-->
+    <!-- Prende tutto quello che è presente nel componente che utilizza questo componente
+        Ad esempio se il componente pippo usa
+        <app-divider>
+            <p>pippo </p>
+            <ul>
+                <li></li>
+            </ul>
+        </app-divider>
+
+        Viene passato tramite ng-content tutto quello che è presente in <app-divider>
+    -->
     <ng-content></ng-content>
 </h1>
 <div class="ui divider"></div>

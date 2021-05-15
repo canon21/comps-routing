@@ -1,3 +1,18 @@
-<app-placeholder [header]="true" [lines]="5">
-    
-</app-placeholder>
+<!--[] = "" -> Interpreta quello che c'è a destra dell'assegnazione come codice da elaborare
+<app-divider [title] = "'TITLE'"></app-divider>
+ -->
+<!-- In questo modo invece si passa semplicemente la stringa e non c'è bisogno di elaborare codice -->
+<!-- 
+<app-divider title = "Placeholder Component"></app-divider>
+
+Entrambi gli approcci sopracitati hanno lo svantaggio che bisogna ricordarsi che bisogna impostare una proprietà come input
+-->
+<!-- Modo migliore in questo scenario-->
+<app-divider>
+    Placeholder Componenent
+</app-divider>
+<app-placeholder ></app-placeholder>
+
+<app-divider>
+    Segment Component
+</app-divider>

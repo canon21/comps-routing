@@ -1,0 +1,15 @@
+/* non visualizza gli elementi con class actions senza empty*/
+.actions:empty{
+    display: none;
+}
+
+.actions-default {
+    display: none;
+}
+
+/*Seleziona il primo elemento con class action-default subito dopo un .actions:empty
+  nb. Se è presente un unico elemento con class action-default => selezionera quello anche se non è posizionato dopo. 
+*/
+.actions:empty + .actions-default {
+    display: block;
+}

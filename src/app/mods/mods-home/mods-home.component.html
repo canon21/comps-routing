@@ -3,7 +3,9 @@
 <app-modal (closeModal)="onClick()" *ngIf="modalOpen">
     <div modalTitle>Write here your header</div>
     <p content>Write here your content</p>
-    <!-- <ng-container modalFooter>
+    <ng-container modalFooter>
         <button class="ui button" (click)="onClick()">CLOSE</button>
-    </ng-container> -->
+    </ng-container>
 </app-modal>
+<app-divider>Accordion Component</app-divider>
+<app-accordion [items] = "accordionElement"></app-accordion>
